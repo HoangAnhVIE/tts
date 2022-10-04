@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right, #4daf54,#3d8880);
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+}
+:root{
+    --green: #4daf54;
+}
+.card{
+    margin: 120px auto;
+    width: 320px;
+    height: 420px;
+    background-color: #272d40;
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    box-shadow: -10px 5px 10px gray;
+}
+.card__hear, .card__cart{
+    font-size: 25px;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    cursor: pointer;
+}
+
+.card__cart{
+    left: unset;
+    right: 20px;
+}
+.card__img{
+    width: 100%;
+    padding-left: 30px;
+    transition: 0.5s;
+}
+.card__img img{
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+.card__title,.card__price{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 10px;
+    transition: 0.5s;
+}
+.card__title{
+    color: var(--green);
+}
+.card__size,.card__color{
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+    margin-bottom: 10px;;
+}
+.card__size span{
+    padding: 0 5px;
+    background-color: white;
+    color: black;
+    border-radius: 20%;
+    margin: 0 4px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.card__size span:hover{
+    transform: scale(1.1);
+    background-color: wheat;
+}
+.card__color span {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.card__color span:hover{
+    transform: scale(1.2);
+    border: 2px solid white;
+}
+.card__color__green{
+    background-color: green;
+}
+.card__color__red{
+    background-color: red;
+}
+.card__color__yellow{
+    background-color: yellow;
+}
+.card__color__black{
+    background-color: black;
+}
+.card__action button{
+    background-color: var(--green);
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-right: 10px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.card__action button:hover{
+    transform: scale(1.1);
+}
+.card:hover .card__img{
+    transform:translateY(-80px) rotate(-20deg);
+}
+.card:hover .card__title {
+    transform:translate(-75px, -80px)
+}
+.card:hover .card__price {
+    transform: translate(-115px,-80px);
+}
+.card__size{
+    margin-top: 100px;
+}
+.card__size, .card__color, .card__action{
+     
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    transition-delay: 0.4s;
+}
+.card:hover .card__size, 
+.card:hover .card__color, 
+.card:hover .card__action{
+    visibility: visible;
+    opacity: 100;
+}
+.card:hover .card__size{
+    margin-top: -80px;
+}
+.card__info {
+    text-align: center;
+    transition: 0.2s;
+    visibility: visible;
+    padding-top: 10px;
+}
+.card:hover .card__info{
+    visibility: hidden;
+    transform: translateX(20px);
+}
