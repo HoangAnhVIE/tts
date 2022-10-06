@@ -3,8 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-*{
-}
 body{
     background: linear-gradient(to right, #4daf54,#3d8880);
     height: 100vh;
@@ -52,6 +50,7 @@ body{
     text-align: center;
     padding-bottom: 10px;
     transition: 0.5s;
+    visibility: visible;
 }
 .card__title{
     color: var(--green);
@@ -124,14 +123,13 @@ body{
     transform: translate(-115px,-80px);
 }
 .card__size{
-    margin-top: 100px;
+    margin-top: 0px;
 }
 .card__size, .card__color, .card__action{
      
     visibility: hidden;
     opacity: 0;
     transition: 0.5s;
-    transition-delay: 0.4s;
 }
 .card:hover .card__size, 
 .card:hover .card__color, 
@@ -144,11 +142,14 @@ body{
 }
 .card__info {
     text-align: center;
-    transition: 0.2s;
     visibility: visible;
     padding-top: 10px;
+    transition: 0.1s;
+    transition-delay: 0.2s;
+    font-size: 15px;
 }
 .card:hover .card__info{
     visibility: hidden;
-    transform: translateX(20px);
+    transform: translateX(-30px);
+    opacity: 0;
 }
