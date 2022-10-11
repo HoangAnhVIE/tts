@@ -4,3 +4,5 @@ var c = a+b;
 console.log(`c do dap an la ${c} `);
 
 neu 1 ngay em khoc uot doi bo mi
+thin pro khong yeu 1 ai 
+ocs asdasdasd
