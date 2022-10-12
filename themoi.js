@@ -4,3 +4,4 @@ var c = a+b;
 console.log(`c do dap an la ${c} `);
 
 
+dell
