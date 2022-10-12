@@ -5,3 +5,12 @@ console.log(`c do dap an la ${c} `);
 
 
 dell
+dell 
+dell
+dell
+dell
+dell
+dell
+dell
+dell
+dell
